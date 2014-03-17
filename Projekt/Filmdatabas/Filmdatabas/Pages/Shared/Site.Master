@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Filmdatabas.Pages.Shared.Site" ViewStateMode="Disabled"%>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+    <title></title>
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+    
+</head>
+<body>  
+        <div id="header">
+
+        <h1>Mickes databas med filmer</h1>
+        <p>Projekt ASP.NET Web Forms</p>
+        </div>
+            <form id="form2" runat="server">
+                <asp:ValidationSummary ID="ValidationSummary1" runat="server"/>
+
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
+        </form>
+    <div id="footer">
+        <p>Mikael Edberg</p>
+    </div>
+    <script src="../../Scripts/JavaScript1.js"></script>
+</body>
+</html>
