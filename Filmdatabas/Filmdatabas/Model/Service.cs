@@ -131,10 +131,6 @@ namespace Filmdatabas.Model
                 return TechInfoDAL.GetFormatByMovieId(titleID);
             }
 
-            public Filmformat GetFilmformat(int filmformatID)
-            {
-                return TechInfoDAL.GetTechById(filmformatID);
-            }
             #endregion
     }
 }

@@ -61,7 +61,7 @@ namespace Filmdatabas.Pages
         }
 
 
-        public IEnumerable<Title> ContactListView_GetData()
+        public IEnumerable<Title> MovieListView_GetData()
         {
 
             return Service.GetMovies();
@@ -69,7 +69,7 @@ namespace Filmdatabas.Pages
 
 
         #region Delete
-        public void ContactListView_DeleteItem(int titelID) // Parameterns namn måste överrensstämma med värdet DataKeyNames har.
+        public void MovieListView_DeleteItem(int titelID) // Parameterns namn måste överrensstämma med värdet DataKeyNames har.
         {
 
             try
@@ -107,7 +107,7 @@ namespace Filmdatabas.Pages
         #endregion
 
 
-        protected void ContactListView_ItemDataBound(object sender, ListViewItemEventArgs e)
+        protected void MovieListView_ItemDataBound(object sender, ListViewItemEventArgs e)
         {
             Title title = e.Item.DataItem as Title;
 
@@ -139,7 +139,7 @@ namespace Filmdatabas.Pages
         #region Update
 
 
-        public void ContactListView_UpdateItem(int movieID) // Parameterns namn är samma som värdet DataKeyNames har.
+        public void MovieListView_UpdateItem(int movieID) // Parameterns namn är samma som värdet DataKeyNames har.
         {
             try
             {

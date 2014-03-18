@@ -3,13 +3,13 @@
     <asp:Label ID="ShowMessage" runat="server" Text="" Visible="false"></asp:Label>
         <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" OnClick="AddRedirectButton_Click">Bakåt</asp:LinkButton>
     <div id="addForm">
-    <asp:FormView ID="ContactListView" runat="server"
+    <asp:FormView ID="MovieListView" runat="server"
                 ItemType="Filmdatabas.Model.Title"
                 DefaultMode="Edit"
                 RenderOuterTable="false"
-                UpdateMethod="ContactListView_UpdateItem"
+                UpdateMethod="MovieListView_UpdateItem"
                 DataKeyNames="TitelID"
-                SelectMethod="ContactListView_GetData">
+                SelectMethod="MovieListView_GetData">
 
             <EditItemTemplate>
                     <%-- Mall för rad i tabellen för att redigera kunduppgifter. --%>

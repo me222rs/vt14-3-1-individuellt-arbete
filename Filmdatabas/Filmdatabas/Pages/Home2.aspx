@@ -5,13 +5,13 @@
             <asp:Label ID="ShowMessage" runat="server" Text="" Visible="false"></asp:Label>
 
 
-        <asp:ListView ID="ContactListView" runat="server"
+        <asp:ListView ID="MovieListView" runat="server"
                 ItemType="Filmdatabas.Model.Title"
-                SelectMethod="ContactListView_GetData"
-                DeleteMethod="ContactListView_DeleteItem"
-                UpdateMethod="ContactListView_UpdateItem"
+                SelectMethod="MovieListView_GetData"
+                DeleteMethod="MovieListView_DeleteItem"
+                UpdateMethod="MovieListView_UpdateItem"
                 DataKeyNames="TitelID" 
-                OnItemDataBound="ContactListView_ItemDataBound">
+                OnItemDataBound="MovieListView_ItemDataBound">
                 <LayoutTemplate>
                     <div class="movieTable">
                     <table class="grid">

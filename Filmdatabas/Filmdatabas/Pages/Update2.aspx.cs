@@ -72,14 +72,14 @@ namespace Filmdatabas.Pages
 
         #region Update
 
-        public Title ContactListView_GetData([QueryString]int titleID)
+        public Title MovieListView_GetData([QueryString]int titleID)
         {
             //iD = titleID;
             //titleID = Convert.ToInt32(Request.QueryString["id"]);
             return Service.GetMovie(titleID);
         }
 
-        public void ContactListView_UpdateItem([QueryString]int titleID) // Parameterns namn är samma som värdet DataKeyNames har.
+        public void MovieListView_UpdateItem([QueryString]int titleID) // Parameterns namn är samma som värdet DataKeyNames har.
         {
             //titelID = 66;
             if (ModelState.IsValid)
@@ -95,7 +95,7 @@ namespace Filmdatabas.Pages
                         return;
                     }
 
-                    var checkBoxList = (CheckBoxList)ContactListView.FindControl("FormatCheckBoxList");
+                    var checkBoxList = (CheckBoxList)MovieListView.FindControl("FormatCheckBoxList");
                     int[] format_ids = checkBoxList.Items.Cast<ListItem>().Where(li => li.Selected).Select(li => int.Parse(li.Value)).ToArray();
                     if (TryUpdateModel(movie))
                     {
@@ -156,7 +156,7 @@ namespace Filmdatabas.Pages
         protected void CheckCustomValidator_ServerValidate(object source, ServerValidateEventArgs args)
         {
 
-            var checkBoxList = (CheckBoxList)ContactListView.FindControl("FormatCheckBoxList");
+            var checkBoxList = (CheckBoxList)MovieListView.FindControl("FormatCheckBoxList");
             var checkBoxChecked = checkBoxList.SelectedItem;
 
             if (checkBoxChecked != null)

@@ -61,7 +61,7 @@ namespace Filmdatabas.Pages
 
 
         #region Insert
-        public void ContactListView_InsertItem(Title titelID)
+        public void MovieListView_InsertItem(Title titelID)
         {
             if (ModelState.IsValid)
             {
@@ -115,7 +115,7 @@ namespace Filmdatabas.Pages
         protected void CheckCustomValidator_ServerValidate(object source, ServerValidateEventArgs args)
         {
            
-            var checkBoxList = (CheckBoxList)ContactListView.FindControl("FormatCheckBoxList");
+            var checkBoxList = (CheckBoxList)MovieListView.FindControl("FormatCheckBoxList");
             var checkBoxChecked = checkBoxList.SelectedItem;
 
             if (checkBoxChecked != null)

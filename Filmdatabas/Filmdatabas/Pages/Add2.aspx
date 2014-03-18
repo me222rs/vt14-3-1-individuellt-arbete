@@ -5,11 +5,11 @@
         <asp:Label ID="ShowMessage" runat="server" Text="" Visible="false"></asp:Label>
         </p>
            <div id="addForm">
-        <asp:FormView ID="ContactListView" runat="server"
+        <asp:FormView ID="MovieListView" runat="server"
                 ItemType="Filmdatabas.Model.Title"
                 DefaultMode="Insert"
                 RenderOuterTable="false"
-                InsertMethod="ContactListView_InsertItem"
+                InsertMethod="MovieListView_InsertItem"
                 DataKeyBind="TitelID">
                 <InsertItemTemplate>
                     <%-- Mall för rad i tabellen för att lägga till nya kunduppgifter. Visas bara om InsertItemPosition 
