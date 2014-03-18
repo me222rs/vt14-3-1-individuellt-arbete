@@ -89,7 +89,7 @@ namespace Filmdatabas.Pages
         #region Navigation
         protected void BackButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Home2.aspx");
+            Response.Redirect("~/Pages/Home2.aspx");
             Context.ApplicationInstance.CompleteRequest();
         }
         #endregion

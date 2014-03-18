@@ -92,7 +92,7 @@ namespace Filmdatabas.Pages
         #region Navigation buttons
         protected void AddRedirectButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Add2.aspx");
+            Response.Redirect("~/Pages/Add2.aspx"); //publicera applikationen igen imorgon ocg se om det fungerar bättre nu
             Context.ApplicationInstance.CompleteRequest();
         }
 
